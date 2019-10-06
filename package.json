@@ -8,6 +8,10 @@
         "build-i18n-src": "./scripts/build-i18n-src.js",
         "tx-push-src": "./scripts/tx-push-src.js"
     },
+    "files": [
+        "src",
+        "locales"
+    ],
     "scripts": {
         "build:data": "babel-node scripts/build-data",
         "build": "npm run clean && npm run build:data && webpack --progress --colors --bail",
